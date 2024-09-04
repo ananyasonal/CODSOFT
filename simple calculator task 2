@@ -1,0 +1,54 @@
+# Simple Calculator
+
+# Function to perform the calculation based on user input
+def calculator():
+    print("Simple Calculator")
+    print("Available operations:")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+    print("3. Multiplication (*)")
+    print("4. Division (/)")
+
+    # Input: two numbers and operation choice
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Choose the operation (+, -, *, /): ")
+
+    # Perform the operation
+    if operation == '+':
+        result = num1 + num2
+    elif operation == '-':
+        result = num1 - num2
+    elif operation == '*':
+        result = num1 * num2
+    elif operation == '/':
+        if num2 != 0:  # Check to avoid division by zero
+            result = num1 / num2
+        else:
+            result = "Error! Division by zero."
+    else:
+        result = "Invalid operation choice."
+
+    # Output the result
+    print("The result is:", result)
+
+# Call the calculator function
+calculator()
+
+output:
+Simple Calculator
+Available operations:
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (/)
+Enter the first number: 23
+Enter the second number: 568
+Choose the operation (+, -, *, /): *
+The result is: 13064.0
+
+
+
+
+
+
